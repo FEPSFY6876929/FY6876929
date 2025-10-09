@@ -1,53 +1,24 @@
 <!DOCTYPE html>
-
 <html>
+<head>
+  <title>Change Button Colour</title>
+</head>
+<body>
+  <button id="colorButton">Click me to change colour</button>
   
-  <head>
-  </head>
-    <img src="WebBanner2023 (1).png" alt="Banner" width="1200" height="300">
-      <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
-      <h2>Student URN: 6876929</h2>
-    <hr>
-    <h2 style="font-family:calibri;"><b>Conference paper: Bridge Deck Repairs</b></h2>
-    <hr>
-  <!style for tables>
-    <style>
-          table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 30%;
-            
-          }
-
-          td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-          }
-
-          tr:nth-child(even) {
-            background-colour: #ddddddd
-          }
-    </style>
-
-    <style>
-      p.ex1 {
-        margin-left: 250px;
-      }
-    </style>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"
-  <style>
-  .mySlides {display:none}
-  </style>
-
-  <p class="ex1">
-  <pre>
-    This paper presents a novel adaptive learning strategy. The most accurate classification model from a heterogenous classifier pool is selected at each learning epoch. Our goal is to achieve greater incremental improvement in accuracy
-  , compared to using a single type of classification model throughout the process. The strategy is evaluated on benchmark data sets. We further consider an application to texture classification problems in some mosaic imagery and compare it with non-adaptive 
-    active learning and traditional machine learning approaches. Our results show that...We conclude that...
-  </pre>
-  </p>
-  
+  <script>
+  // Get a reference to the button element
+  var button = document.getElementById("colorButton");
+  // Function to change the button color
+  function changeColor() {
+  // Generate a random color (hexadecimal)
+  var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+  // Set the button's background color to the random color
+  button.style.backgroundColor = randomColor;
+  }
+    
+  // Add a click event listener to the button
+  button.addEventListener("click", changeColor);
+  </script>
+</body>
 </html>
