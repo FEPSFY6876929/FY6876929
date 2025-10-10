@@ -6,10 +6,14 @@
 <body>
   <input type="text" id="textInput" placeholder="Enter text here">
   <button type = "button" id="buttonClick"> Click here</button>
+  <br>
+  <button type = "button" id="buttonClick2">Click</button>
+  <p id="paragraph"> </p>
 
   <script>
     var input = document.getElementById("textInput");
     var button = document.getElementById("buttonClick");
+    var button2 = document.getElementById("buttonClick2")
 
     function showAlert() {
       var inputEntered = input.value;
@@ -17,8 +21,15 @@
       alert("New value has been entered: " + inputEntered);
     }
 
+    function randomNum() {
+      var randVal = math.floor(math.random() * 10);
+
+      var newP = document.getElementById("paragraph");
+      newP.value = randVal
+    }
     
     button.addEventListener("click", showAlert);
+    button2.addEventListener("click", randomNum)
   </script>
 </body>
 </html>
