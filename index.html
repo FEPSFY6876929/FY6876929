@@ -1,36 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Consolidation task 1</title>
+  <meta charset="UTF-8" />
+  <title>Your Article Title</title>
 </head>
 <body>
-  <input type="text" id="textInput" placeholder="Enter text here">
-  <button type = "button" id="buttonClick"> Click here</button>
-  <br>
-  <button type = "button" id="buttonClick2">Click</button>
-  <p id="paragraph"> </p>
+  <article>
+    <h1>Artificial intelligence and ethical responsibility: Exploring its challenges and applications</h1>
 
-  <script>
-    var input = document.getElementById("textInput");
-    var button = document.getElementById("buttonClick");
-    var button2 = document.getElementById("buttonClick2")
+    <h2>Abstract: </h2>
+    <p>The rise in usage of artificial intelligence(AI) over the past few years has raised concerns in various fields of work. Artificial intelligence consumption could rise by 80% between 2022 - 2026 according to the IEA(International Energy Agency). The electricity consumption for data centres have grown 12% per year during the past 5 years. Topics such as bias, accountability, dependency etc, have raised awareness for Artificial Intelligence’s decision making abilities.
+    This paper aims to explore the underlying problems that have been created with AI and how it is possible to tackle them. It furthermore explains the solutions companies and organisations-such as the Partnership on AI (PAI)- and how they have worked to minimise the consequences and concerns.
+    The purpose of this article is to raise awareness with the help of work forwarded by researchers to inform people of the recent studies, to encourage proper use of AI in our society.
+    </p>
 
-    function showAlert() {
-      var inputEntered = input.value;
-      
-      alert("New value has been entered: " + inputEntered);
-    }
+    <h2></h2>
+    <p>
+    In the last decade, the rapid advancement of AI has impacted many industries which include that of healthcare, e-commerce, education and finance. Although the implementation of AI systems have given benefits of automation and increased efficiency, there also come drawbacks which concern privacy, bias and even job replacement.
+    Organisations and companies have come forward to introduce solutions in order to tackle the problems as a society and how we as people can use AI effectively without it causing any harm. The staggering increase of students using AI in their undergraduate studies has risen from 53% to 88% based on a survey conducted by Savanta in the UK. Similarly, 85% of students have reported to be using AI in their studies in the US. The increased consumption of AI tools such as ChatGPT has researchers estimating the consumption of AI systems to reach 23 gigawatts(GW). This article will look into the primary zones-Healthcare and job hiring-as well as the regulation done so far.
+    </p>
 
-    function randomNum() {
-      var randVal = math.floor(math.random() * 10);
+    <h2></h2>
+    <p>
+    Healthcare is one of the industries where AI has helped ill patients by using one of the technologies of AI-machine learning(ML). ML is able to learn and adapt from data without following programming instructions, ultimately speeding up the process. AI has been used to detect cancer faster and ML can process large amounts of data while making accurate assessments[1]. The issues of privacy arose with permissions of patient data to be used for the AI training models[2].(Refer to table 1). Evidently, extensive consent will be required from patients for third party access which concerns how their data will be used[3].
+    Label bias is a type of bias that is evident in machine learning models when the model itself is flawed. “For instance, healthcare inequalities caused by systematic misdiagnoses for certain diseases for certain groups of patients will be perpetuated by AI models since they only rely on the features being inputted and must learn using the labels previously determined as correct, without the ability to distinguish whether they are biased or not”[4]
+    </p>
 
-      var newP = document.getElementById("paragraph");
-      newP.value = randVal
-    }
-    
-    button.addEventListener("click", showAlert);
-    button2.addEventListener("click", randomNum)
-  </script>
+    <h2></h2>
+    <p>
+    The incorporation of AI in employment has improved the efficiency by helping companies to go through thousands of applications in a near instant[5]. AI companies like HireVue and Workday deploy have started to implement their AI models by analysing the candidates whether their skills and behaviours are suited for the job. However, these AI models work as ‘black boxes’-a device whose workings are hidden. Due to the lack of transparency, there is no explanation for candidates being rejected.
+
+    “poses substantial legal and ethical risks under emerging regulatory regimes such as Issues in Information Systems Volume 26, Issue 3, pp. 127-135, 2025 128 the European Union’s General Data Protection Regulation (GDPR), New York City’s Automated Employment Decision Tool (AEDT) law, and the ADA in the United States (Moss, 2021; Vogel et al., 2024)”[5]
+
+    On the contrary, AI has sparked a new path in the job market with careers like data science, machine learning and data analytics displayed by a research done in China.
+    According to the same article, AI’s ability to perform automotive tasks will contribute to job reductions with half of them being potentially replaced from 2030-2060[7].
+    Furthermore, an article whose research took place between the periods from 2010-2020 in the US also implied that jobs with high exposure to AI, faced a higher chance of unemployment[8].
+
+    “It seems barely a day goes by without a new report of artificial intelligence replacing jobs. On Thursday, BT added the latest bad news, when the UK telecoms giant announced plans to replace 10,000 staff with AI” This is in reference to a telecoms company in the UK replacing their staff with AI creating unemployment.[6]
+    </p>
+
+    <h2></h2>
+    <p>
+    As AI begins to play a significant role in every field, cooperation for regulation between government bodies is essential in order to control how AI can benefit us positively without the drawbacks. The European Union(EU) for example, aims to employ the strictest rules on high risk AI models. There are scientists that oppose this and claim that AI models being very smart and capable won’t equate to more harm.[10]
+
+    Elsewhere In healthcare, the council of Europe recommended a risk based approach due to the unknown risks it may be to someone.[11] The reason for this is how AI introduces obstacles like consent and medical negligence. Therefore, this requires moral and technical guidance before being fleshed out into the public.
+    In the US, the Bill of AI Rights-a blueprint framework introduced in October 2022 including 5 principles-ensures how AI systems can be used. For example, discrimination factors which may judge one on their race/gender/ethnicity is taken into account so that the AI systems won’t offend them.
+    </p>
+
+    <h2></h2>
+    <p>
+    This paper has examined one of the industries AI has impacted, The effects of AI on recruitment and what the government bodies, organisations have done up until now to control the AI systems being used. In the 3 topics discussed, all of them showed that AI can provide benefits so long that there is control on the AI models before being used. The drawbacks mainly come from the fact that there is limited understanding with the AI models. For example-black boxes.
+    Nonetheless, this research has concluded that the regulations for AI are essential which is why government bodies are passing laws/blueprints so that AI can impact society in a positive manner while at the same time, minimising all the negative impacts like workers being replaced with automotive machines.
+    </p>
+   
+  </article>
 </body>
 </html>
 
